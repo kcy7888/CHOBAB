@@ -1,0 +1,170 @@
+
+<!doctype html>
+<html>
+<head>
+<title>chobab</title>
+
+ <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.4/build/98.css" />
+<meta charset="utf-8">
+<style>
+
+body {
+  margin: inherit;
+}
+</style>
+</head>
+
+<body style="background-color: #a9a9a9;">
+
+
+
+    <div class="window" style="margin: 32px; width: 283px">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          About the romance that will come again
+        </div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <p>Are you ready to imagine?</p>
+        <section class="field-row" style="justify-content: flex-end">
+          <button><a href= "catchedAlert()"> OK </button>
+          <button><a href="index.html">Cancel</a></button>
+        </section>
+
+    </div>
+
+    
+
+    <script>
+        var lines = {
+          "1" : "여행",
+          "2" : "노을",
+          "3" : "여행",
+          "4" : "가을",
+          "5" : "공원",
+          "6" : "눈",
+          "7" : "산들바람",
+          "8" : "예술",
+          "9" : "언덕",
+          "10" : "잠",
+          "11" : "예수",
+          "12" : "여행",
+          "13" : "청춘",
+          "14" : "시집",
+          "15" : "꿈",
+          "16" : "50대남성",
+          "17" : "노을",
+          "18" : "여행",
+          "19" : "야경",
+          "20" : "노을",
+          "21" : "술",
+          "22" : "첫눈",
+          "23" : "윤슬",
+          "24" : "돈",
+          "25" : "꿈",
+          "26" : "튤립",
+          "27" : "어부",
+          "28" : "여행",
+          "29" : "대학생활",
+          "30" : "야인시대",
+          "31" : "붉은",
+          "32" : "노란",
+          "33" : "자유로운",
+          "34" : "쓸쓸한",
+          "35" : "평화로운",
+          "36" : "따스한",
+          "37" : "느긋한",
+          "38" : "여유로운",
+          "39" : "찬란한",
+          "40" : "훌륭한",
+          "41" : "반짝거리는",
+          "42" : "사랑스러운",
+          "43" : "포근한",
+          "44" : "아름다운",
+          "45" : "화사한",
+          "46" : "우아한",
+          "47" : "따듯한",
+          "48" : "여유로운",
+          "49" : "닿을 수 없는",
+          "50" : "사르르",
+          "51" : "어스름한",
+          "52" : "상상의",
+          "53" : "환상적인",
+          "54" : "애틋한",
+          "55" : "안심되는",
+          "56" : "편안한",
+          "57" : "기쁜",
+          "58" : "멋있는",
+          "59" : "반짝거리는",
+          "60" : "이상적인",
+          "61" : "즐기다",
+          "62" : "보다",
+          "63" : "간다",
+          "64" : "휴식하다",
+          "65" : "걷다",
+          "66" : "걷다",
+          "67" : "어울리다",
+          "68" : "즐기다",
+          "69" : "앉다",
+          "70" : "자다",
+          "71" : "고통스럽다",
+          "72" : "마시다",
+          "73" : "따듯하다",
+          "74" : "쉬다",
+          "75" : "감상하다",
+          "76" : "반짝이다",
+          "77" : "거닐다",
+          "78" : "사랑하다",
+          "79" : "키스하다",
+          "80" : "함께하다",
+          "81" : "회상하다",
+          "82" : "내려오다",
+          "83" : "비추다",
+          "84" : "벅차오르다",
+          "85" : "빛나다",
+          "86" : "눈바래다",
+          "87" : "날다",
+          "88" : "마시다",
+          "89" : "즐겁다",
+          "90" : "지키다",
+        };
+        </script>
+  
+        <script>
+        var randomProperty = function (lines) {
+          var keys = Object.keys(lines);
+          return lines[keys[Math.floor(keys.length * Math.random())]];
+          <!-- -->
+      };
+  
+        </script>
+  
+  
+  
+      <script>
+      function catchedAlert(){
+        alert(random3Property(lines));
+      }
+      </script>
+
+      <!---->
+  
+      <!---->
+      <script>
+        var random3Property = function (keywords) {
+          var keys = Object.keys(keywords)
+          var valueArray = new Array();
+          valueArray[0] = keywords[keys[Math.floor(Math.random() * 30)]];
+          valueArray[1] = keywords[keys[Math.floor(Math.random() * 60)]];
+          valueArray[2] = keywords[keys[Math.floor(Math.random() * 90)]];
+          return valueArray
+        };
+      </script>
+
+</body>
